@@ -1,6 +1,6 @@
 package com.example.newsreader.presentation
 
-import com.example.newsreader.domain.News
+import com.alvindizon.newsreaderkmp.domain.News
 
 internal sealed class UiState {
     data object Loading: UiState()

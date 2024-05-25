@@ -2,8 +2,7 @@ package com.example.newsreader.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.newsreader.domain.News
-import com.example.newsreader.domain.NewsRepository
+import com.alvindizon.newsreaderkmp.domain.NewsRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
