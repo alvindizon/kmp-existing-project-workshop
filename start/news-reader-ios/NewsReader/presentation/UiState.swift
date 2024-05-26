@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NewsReaderKMP
 
 
 enum UiState {

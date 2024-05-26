@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,13 +14,10 @@
 		131D38CD2B0F455A007A926B /* NewsReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38CC2B0F455A007A926B /* NewsReaderTests.swift */; };
 		131D38D72B0F455A007A926B /* NewsReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38D62B0F455A007A926B /* NewsReaderUITests.swift */; };
 		131D38D92B0F455A007A926B /* NewsReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38D82B0F455A007A926B /* NewsReaderUITestsLaunchTests.swift */; };
-		131D38E92B0F4616007A926B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38E82B0F4616007A926B /* Database.swift */; };
-		131D38EB2B0F487F007A926B /* NewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38EA2B0F487F007A926B /* NewsDTO.swift */; };
-		131D38ED2B0F48AF007A926B /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38EC2B0F48AF007A926B /* DateFormatter.swift */; };
-		131D38EF2B0F48B8007A926B /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38EE2B0F48B8007A926B /* News.swift */; };
-		131D38F12B0F48C0007A926B /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38F02B0F48C0007A926B /* NewsRepository.swift */; };
 		131D38F32B0F6230007A926B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38F22B0F6230007A926B /* MainViewModel.swift */; };
 		131D38F52B0F6248007A926B /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D38F42B0F6248007A926B /* UiState.swift */; };
+		827F26FD2C022EFA0060DE0E /* NewsReaderKMP in Frameworks */ = {isa = PBXBuildFile; productRef = 827F26FC2C022EFA0060DE0E /* NewsReaderKMP */; };
+		82E6B0732C0301A600545F1B /* NewsReaderKMP in Frameworks */ = {isa = PBXBuildFile; productRef = 82E6B0722C0301A600545F1B /* NewsReaderKMP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +49,6 @@
 		131D38D22B0F455A007A926B /* NewsReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		131D38D62B0F455A007A926B /* NewsReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderUITests.swift; sourceTree = "<group>"; };
 		131D38D82B0F455A007A926B /* NewsReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		131D38E82B0F4616007A926B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		131D38EA2B0F487F007A926B /* NewsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDTO.swift; sourceTree = "<group>"; };
-		131D38EC2B0F48AF007A926B /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
-		131D38EE2B0F48B8007A926B /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		131D38F02B0F48C0007A926B /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
 		131D38F22B0F6230007A926B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		131D38F42B0F6248007A926B /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827F26FD2C022EFA0060DE0E /* NewsReaderKMP in Frameworks */,
+				82E6B0732C0301A600545F1B /* NewsReaderKMP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +103,6 @@
 		131D38B92B0F4559007A926B /* NewsReader */ = {
 			isa = PBXGroup;
 			children = (
-				131D38E52B0F45E3007A926B /* data */,
-				131D38E62B0F45EE007A926B /* domain */,
 				131D38E72B0F45F8007A926B /* presentation */,
 				131D38BA2B0F4559007A926B /* NewsReaderApp.swift */,
 				131D38BE2B0F455A007A926B /* Assets.xcassets */,
@@ -145,25 +137,6 @@
 			path = NewsReaderUITests;
 			sourceTree = "<group>";
 		};
-		131D38E52B0F45E3007A926B /* data */ = {
-			isa = PBXGroup;
-			children = (
-				131D38E82B0F4616007A926B /* Database.swift */,
-				131D38EA2B0F487F007A926B /* NewsDTO.swift */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		131D38E62B0F45EE007A926B /* domain */ = {
-			isa = PBXGroup;
-			children = (
-				131D38EC2B0F48AF007A926B /* DateFormatter.swift */,
-				131D38EE2B0F48B8007A926B /* News.swift */,
-				131D38F02B0F48C0007A926B /* NewsRepository.swift */,
-			);
-			path = domain;
-			sourceTree = "<group>";
-		};
 		131D38E72B0F45F8007A926B /* presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +163,10 @@
 			dependencies = (
 			);
 			name = NewsReader;
+			packageProductDependencies = (
+				827F26FC2C022EFA0060DE0E /* NewsReaderKMP */,
+				82E6B0722C0301A600545F1B /* NewsReaderKMP */,
+			);
 			productName = NewsReader;
 			productReference = 131D38B72B0F4559007A926B /* NewsReader.app */;
 			productType = "com.apple.product-type.application";
@@ -262,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 131D38AE2B0F4559007A926B;
+			packageReferences = (
+				82E6B0712C0301A600545F1B /* XCLocalSwiftPackageReference "../../../NewsReaderKMP-iOS" */,
+			);
 			productRefGroup = 131D38B82B0F4559007A926B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,14 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				131D38EF2B0F48B8007A926B /* News.swift in Sources */,
-				131D38EB2B0F487F007A926B /* NewsDTO.swift in Sources */,
-				131D38F12B0F48C0007A926B /* NewsRepository.swift in Sources */,
-				131D38E92B0F4616007A926B /* Database.swift in Sources */,
 				131D38BD2B0F4559007A926B /* ContentView.swift in Sources */,
 				131D38F52B0F6248007A926B /* UiState.swift in Sources */,
 				131D38BB2B0F4559007A926B /* NewsReaderApp.swift in Sources */,
-				131D38ED2B0F48AF007A926B /* DateFormatter.swift in Sources */,
 				131D38F32B0F6230007A926B /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +638,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		82E6B0712C0301A600545F1B /* XCLocalSwiftPackageReference "../../../NewsReaderKMP-iOS" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../NewsReaderKMP-iOS";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		827F26FC2C022EFA0060DE0E /* NewsReaderKMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewsReaderKMP;
+		};
+		82E6B0722C0301A600545F1B /* NewsReaderKMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewsReaderKMP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 131D38AF2B0F4559007A926B /* Project object */;
 }

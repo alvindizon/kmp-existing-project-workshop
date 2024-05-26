@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import NewsReaderKMP
 
 @main
 struct NewsReaderApp: App {

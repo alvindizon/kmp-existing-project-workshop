@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NewsReaderKMP
 
 @MainActor
 class MainViewModel: ObservableObject {
